@@ -1,6 +1,6 @@
 {
   "name": "tests-hub-server",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "keywords": [
     "js",
     "node",
@@ -25,7 +25,9 @@
   },
   "description": "Server for tests-hub",
   "scripts": {
-    "start": "nest build && node ./dist/main.js",
+    "prestart:prod": "nest build",
+    "postinstall": "npm run prestart:prod",
+    "start:prod": "node dist/src/main.js",
     "start:dev": "nest start --watch"
   },
   "dependencies": {
