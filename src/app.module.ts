@@ -3,13 +3,15 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AccentTesterModule } from './AccentTester/AccentTester.module';
 import { TestModule } from './Test/AccentTester.module';
+import { TypingTesterModule } from './TypingTester/TypingTester.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot(),
     MongooseModule.forRoot(process.env.DB_URI),
     TestModule,
-    AccentTesterModule
+    AccentTesterModule,
+    TypingTesterModule
   ],
 })
 export class AppModule {}
