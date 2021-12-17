@@ -1,6 +1,6 @@
 {
   "name": "tests-hub-server",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "keywords": [
     "js",
     "node",
@@ -35,9 +35,9 @@
     "@nestjs/mongoose": "^9.0.1",
     "@nestjs/platform-express": "^8.0.0",
     "crypto": "^1.0.1",
-    "mongoose": "^6.1.2"
-  },
-  "devDependencies": {
+    "mongoose": "^6.1.2",
+
+
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/testing": "^8.0.0",
@@ -47,6 +47,8 @@
     "ts-node": "^10.0.0",
     "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5"
+  },
+  "devDependencies": {
   },
   "private": false,
   "engines": {
