@@ -1,6 +1,6 @@
 {
   "name": "tests-hub-server",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "keywords": [
     "js",
     "node",
@@ -25,7 +25,7 @@
   },
   "description": "Server for tests-hub",
   "scripts": {
-    "start": "nest start",
+    "start": "nest build && node ./dist/main.js",
     "start:dev": "nest start --watch"
   },
   "dependencies": {
