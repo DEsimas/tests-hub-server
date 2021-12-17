@@ -1,13 +1,13 @@
 import { Controller, Get } from '@nestjs/common';
 import { AccentTesterService } from './AccentTester.service';
-import { Word } from './Word.schema';
+import { AccentTester } from './AccentTester.schema';
 
 @Controller('/AccentTester')
 export class AccentTesterController {
   constructor(private readonly AccentTesterService: AccentTesterService) {}
 
   @Get()
-  findAll(): Promise<Word[]> {
+  findAll(): Promise<AccentTester[]> {
     return this.AccentTesterService.findAll();
   }
 }

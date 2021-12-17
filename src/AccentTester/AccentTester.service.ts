@@ -1,12 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Promise } from 'mongodb';
 import { Model } from 'mongoose';
-import { Word, WordDocument } from './Word.schema';
+import { AccentTester, AccentTesterDocument } from './AccentTester.schema';
 
 @Injectable()
 export class AccentTesterService {
-  constructor(@InjectModel(Word.name) private wordModel: Model<WordDocument>) {}
+  constructor(@InjectModel(AccentTester.name) private wordModel: Model<AccentTesterDocument>) {}
 
   async findAll() {
     return this.wordModel.find().exec();
