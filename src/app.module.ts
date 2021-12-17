@@ -1,8 +1,15 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { MongooseModule } from '@nestjs/mongoose';
 import { AccentTesterModule } from './AccentTester/AccentTester.module';
 import { TestModule } from './Test/AccentTester.module';
 
 @Module({
-  imports: [TestModule, AccentTesterModule],
+  imports: [
+    ConfigModule.forRoot(),
+    MongooseModule.forRoot(process.env.DB_URI),
+    TestModule,
+    AccentTesterModule
+  ],
 })
 export class AppModule {}
