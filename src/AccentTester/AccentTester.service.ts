@@ -25,7 +25,7 @@ export class AccentTesterService {
   async findAll(): Promise<string> {
     const words = await this.wordModel.find().exec();
     const msg = this.encrypt(JSON.stringify(words));
-    msg.content += process.env.ENCODING_KEY;
+    msg.content += process.env.ACCENT_TESTER_ENCODING_KEY;
     return JSON.stringify(msg);
   }
 }
