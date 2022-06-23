@@ -25,7 +25,9 @@
   "description": "Server for tests-hub",
   "scripts": {
     "start": "nest build && node ./dist/main.js",
-    "start:dev": "nest start --watch"
+    "start:dev": "nest start --watch",
+    "start:web": "set TYPE=WEB && npm run start",
+    "start:worker": "set TYPE=WORKER && npm run start"
   },
   "dependencies": {
     "@nestjs/cli": "^8.0.0",

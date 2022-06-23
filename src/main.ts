@@ -21,5 +21,8 @@ async function bootstrap() {
   });
 }
 
+
 startBots();
 bootstrap();
+
+console.log(process.env.TYPE);
