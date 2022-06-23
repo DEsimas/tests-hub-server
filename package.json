@@ -1,16 +1,15 @@
 {
-  "name": "tests-hub-server",
+  "name": "desimas-server",
   "version": "2.0.0",
   "keywords": [
     "js",
     "node",
     "typescript",
     "nestjs",
-    "heroku",
-    "tests-hub"
+    "heroku"
   ],
   "bugs": {
-    "url": "https://github.com/DEsimas/tests-hub-server/issues",
+    "url": "https://github.com/DEsimas/desimas-server/issues",
     "email": "simasuh@gmail.com"
   },
   "license": "MIT",
@@ -21,7 +20,7 @@
   "main": "./src/main.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DEsimas/tests-hub-server"
+    "url": "https://github.com/DEsimas/desimas-server"
   },
   "description": "Server for tests-hub",
   "scripts": {
