@@ -1,6 +1,6 @@
 {
   "name": "desimas-server",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "keywords": [
     "js",
     "node",
@@ -26,8 +26,8 @@
   "scripts": {
     "start": "nest build && node ./dist/main.js",
     "start:dev": "nest start --watch",
-    "start:web": "set TYPE=WEB && npm run start",
-    "start:worker": "set TYPE=WORKER && npm run start"
+    "start:web": "nest build && node ./dist/web.js",
+    "start:worker": "nest build && node ./dist/worker.js"
   },
   "dependencies": {
     "@nestjs/cli": "^8.0.0",
