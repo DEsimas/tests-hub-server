@@ -8,7 +8,7 @@ import { TypingTesterModule } from './TypingTester/TypingTester.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(process.env.TESTS_HUB_URL),
+    MongooseModule.forRoot(process.env.TESTS_HUB_DB_URI),
     TestModule,
     AccentTesterModule,
     TypingTesterModule
