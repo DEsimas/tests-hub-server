@@ -12,7 +12,7 @@ export class AccentTesterService {
   private encrypt(text: string) {
     const iv = crypto.randomBytes(16);
     
-    const cipher = crypto.createCipheriv(this.algorithm, process.env.ENCODING_KEY, iv);
+    const cipher = crypto.createCipheriv(this.algorithm, process.env.ACCENT_TESTER_ENCODING_KEY, iv);
 
     const encrypted = Buffer.concat([cipher.update(text), cipher.final()]);
 
