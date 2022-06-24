@@ -37,7 +37,7 @@
     "@nestjs/schematics": "^8.0.0",
     "crypto": "^1.0.1",
     "emojis-bot": "^6.12.3",
-    "heys-bot": "^7.2.2",
+    "heys-bot": "^7.2.5",
     "mongoose": "^6.1.2",
     "node-fetch": "^3.2.6",
     "node-fetch-commonjs": "^3.1.1",
