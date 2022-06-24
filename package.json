@@ -1,6 +1,6 @@
 {
   "name": "desimas-server",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "keywords": [
     "js",
     "node",
@@ -18,15 +18,12 @@
     "name": "Serafim Sukharev",
     "email": "simasuh@gmail.com"
   },
-  "main": "./src/main.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/DEsimas/desimas-server"
   },
   "description": "Server for tests-hub",
   "scripts": {
-    "start": "nest build && node ./dist/main.js",
-    "start:dev": "nest start --watch",
     "start:web": "nest build && node ./dist/web.js",
     "start:worker": "nest build && node ./dist/worker.js"
   },
