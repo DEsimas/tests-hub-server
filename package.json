@@ -8,6 +8,7 @@
     "nestjs",
     "heroku"
   ],
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/DEsimas/desimas-server/issues",
     "email": "simasuh@gmail.com"
@@ -41,6 +42,8 @@
     "emojis-bot": "^6.12.3",
     "heys-bot": "^7.2.2",
     "mongoose": "^6.1.2",
+    "node-fetch": "^3.2.6",
+    "node-fetch-commonjs": "^3.1.1",
     "ts-loader": "^9.2.3",
     "ts-node": "^10.0.0",
     "tsconfig-paths": "^3.10.1",
