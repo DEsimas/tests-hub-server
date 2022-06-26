@@ -38,7 +38,7 @@
     "@types/express": "^4.17.13",
     "@types/node": "^18.0.0",
     "crypto": "^1.0.1",
-    "emojis-bot": "^6.12.4",
+    "emojis-bot": "^6.12.5",
     "heys-bot": "^7.2.5",
     "mongoose": "^6.4.0",
     "node-fetch-commonjs": "^3.1.1",
