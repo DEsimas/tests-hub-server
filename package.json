@@ -1,55 +1,55 @@
 {
-  "name": "desimas-server",
-  "version": "2.0.3",
-  "keywords": [
-    "js",
-    "node",
-    "typescript",
-    "nestjs",
-    "heroku"
-  ],
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/DEsimas/desimas-server/issues",
-    "email": "simasuh@gmail.com"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Serafim Sukharev",
-    "email": "simasuh@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DEsimas/desimas-server"
-  },
-  "description": "Server for tests-hub",
-  "scripts": {
-    "start:web": "nest build && node ./dist/web.js",
-    "start:worker": "nest build && node ./dist/worker.js"
-  },
-  "dependencies": {
-    "@nestjs/cli": "^6.14.2",
-    "@nestjs/common": "^8.4.7",
-    "@nestjs/config": "^2.1.0",
-    "@nestjs/core": "^8.4.7",
-    "@nestjs/mongoose": "^9.1.1",
-    "@nestjs/platform-express": "^8.4.7",
-    "@nestjs/schematics": "^8.0.4",
-    "@types/express": "^4.17.13",
-    "@types/node": "^18.0.0",
-    "crypto": "^1.0.1",
-    "emojis-bot": "^6.12.5",
-    "heys-bot": "^7.3.2",
-    "mongoose": "^6.4.0",
-    "node-fetch-commonjs": "^3.1.1",
-    "ts-loader": "^9.3.1",
-    "ts-node": "^10.8.1",
-    "tsconfig-paths": "^4.0.0",
-    "typescript": "^4.7.4"
-  },
-  "private": false,
-  "engines": {
-    "node": "v16.15.1",
-    "npm": "v8.11.0"
-  }
+    "name": "desimas-server",
+    "version": "2.0.3",
+    "keywords": [
+        "js",
+        "node",
+        "typescript",
+        "nestjs",
+        "heroku"
+    ],
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/DEsimas/desimas-server/issues",
+        "email": "simasuh@gmail.com"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Serafim Sukharev",
+        "email": "simasuh@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DEsimas/desimas-server"
+    },
+    "description": "Server for tests-hub",
+    "scripts": {
+        "start:web": "nest build && node ./dist/web.js",
+        "start:worker": "nest build && node ./dist/worker.js"
+    },
+    "dependencies": {
+        "@nestjs/cli": "^6.14.2",
+        "@nestjs/common": "^8.4.7",
+        "@nestjs/config": "^2.1.0",
+        "@nestjs/core": "^8.4.7",
+        "@nestjs/mongoose": "^9.1.1",
+        "@nestjs/platform-express": "^8.4.7",
+        "@nestjs/schematics": "^8.0.4",
+        "@types/express": "^4.17.13",
+        "@types/node": "^18.0.0",
+        "crypto": "^1.0.1",
+        "emojis-bot": "^6.12.5",
+        "heys-bot": "^7.3.3",
+        "mongoose": "^6.4.0",
+        "node-fetch-commonjs": "^3.1.1",
+        "ts-loader": "^9.3.1",
+        "ts-node": "^10.8.1",
+        "tsconfig-paths": "^4.0.0",
+        "typescript": "^4.7.4"
+    },
+    "private": false,
+    "engines": {
+        "node": "v16.15.1",
+        "npm": "v8.11.0"
+    }
 }
