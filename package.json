@@ -46,10 +46,6 @@
         "typescript": "^4.7.4"
     },
     "private": false,
-    "engines": {
-        "node": "v16.15.1",
-        "npm": "v8.11.0"
-    },
     "devDependencies": {
         "nodemon": "^2.0.19"
     }
