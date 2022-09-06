@@ -1,6 +1,6 @@
-# desimas-server
+# tests-hub-server
 
-This application contains nest backend for [tests-hub](https://github.com/DEsimas/tests-hub) and hosts discord bots: [emojis bot](https://github.com/DEsimas/emojis-bot) and [heys bot](https://github.com/DEsimas/heys-bot). It autopings itself to prevent falling in sleeping mode in production.
+This is backend for [tests-hub](https://github.com/DEsimas/tests-hub)
 
 # Tecnologies
 
@@ -14,6 +14,7 @@ This application contains nest backend for [tests-hub](https://github.com/DEsima
 # Usage
 
 There is heroku deployment on https://tests-hub-server.herokuapp.com/
+
 # .env
 
  <table>
