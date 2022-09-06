@@ -24,8 +24,8 @@
     },
     "description": "Server for tests-hub",
     "scripts": {
-        "start": "nest build && node ./dist/main.js",
-        "watch": ""
+        "start:web": "nest build && node ./dist/web.js",
+        "start:worker": "nest build && node ./dist/worker.js"
     },
     "dependencies": {
         "@nestjs/cli": "^6.14.2",
