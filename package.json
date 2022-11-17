@@ -8,7 +8,6 @@
         "nestjs",
         "heroku"
     ],
-    "homepage": "https://desimas.github.io/tests-hub-server/",
     "type": "commonjs",
     "bugs": {
         "url": "https://github.com/DEsimas/tests-hub-server/issues",
@@ -26,10 +25,7 @@
     "description": "Server for tests-hub",
     "scripts": {
         "start": "nest build && node ./dist/main.js",
-        "watch": "nodemon ./src/main.ts",
-        "build": "nest build",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "watch": "nodemon ./src/main.ts"
     },
     "dependencies": {
         "@nestjs/cli": "^9.1.2",
@@ -44,13 +40,12 @@
         "node-fetch-commonjs": "^3.1.1"
     },
     "devDependencies": {
+        "tsconfig-paths": "^4.0.0",
+        "typescript": "^4.7.4",
+        "ts-node": "^10.8.1",
         "@types/express": "^4.17.13",
         "@types/node": "^18.0.0",
-        "gh-pages": "^4.0.0",
-        "nodemon": "^2.0.19",
-        "ts-node": "^10.8.1",
-        "tsconfig-paths": "^4.0.0",
-        "typescript": "^4.7.4"
+        "nodemon": "^2.0.19"
     },
     "private": false
 }
