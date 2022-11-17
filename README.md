@@ -11,10 +11,6 @@ This is backend for [tests-hub](https://github.com/DEsimas/tests-hub)
     <li>Mongo DB</li>
 </ul>
 
-# Usage
-
-There is heroku deployment on https://tests-hub-server.herokuapp.com/
-
 # .env
 
  <table>
