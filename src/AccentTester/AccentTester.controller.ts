@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 import { AccentTesterService } from './AccentTester.service';
 
 @Controller('/AccentTester')
@@ -11,7 +11,7 @@ export class AccentTesterController {
   }
 
   @Get()
-  findAll(): Promise<string> {
-    return this.AccentTesterService.findAll();
+  async findAll(@Query('collection') collection: string): Promise<string> {
+    return JSON.stringify(await this.AccentTesterService.getWords(collection));
   }
 }

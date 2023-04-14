@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import { InjectModel } from '@nestjs/mongoose';
+import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import * as crypto from 'crypto';
-import { Model } from 'mongoose';
-import { Collection } from './AccentTester.schema';
+import { Connection, Model, Schema } from 'mongoose';
+import { Collection, Word } from './AccentTester.schema';
 
 @Injectable()
 export class AccentTesterService {
-  constructor(@InjectModel('collections', 'accent') private CollectionsModel: Model<Collection>) { }
+  constructor(@InjectModel('collections', 'accent') private CollectionsModel: Model<Collection>, @InjectConnection('accent') private connection: Connection) { }
   private readonly algorithm = 'aes-256-ctr';
 
   private encrypt(text: string) {
@@ -22,12 +22,10 @@ export class AccentTesterService {
     };
   }
 
-  async findAll(): Promise<string> {
-    // const words = await this.wordModel.find().exec();
-    // const msg = this.encrypt(JSON.stringify(words));
-    // msg.content += process.env.ACCENT_TESTER_ENCODING_KEY;
-    // return JSON.stringify(msg);
-    return 'll';
+  async getWords(collection: string): Promise<{ iv: string, content: string }> {
+    const model = await this.connection.model(collection, new Schema({ name: String }));
+    const words = await model.find();
+    return this.encrypt(JSON.stringify(words));
   }
 
   async getCollections(): Promise<string[]> {
