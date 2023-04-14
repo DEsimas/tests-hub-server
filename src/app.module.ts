@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
-import { TestModule } from './Test/AccentTester.module';
 import { AccentTesterModule } from './AccentTester/AccentTester.module';
 
 @Module({
@@ -13,7 +12,6 @@ import { AccentTesterModule } from './AccentTester/AccentTester.module';
     MongooseModule.forRoot(process.env.TYPING_TESTER_DB_URI, {
       connectionName: 'typing',
     }),
-    TestModule,
     AccentTesterModule,
   ],
 })
