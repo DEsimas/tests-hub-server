@@ -4,6 +4,8 @@ import * as crypto from 'crypto';
 import { Connection, Model, Schema } from 'mongoose';
 import { Collection, Word } from './AccentTester.schema';
 
+const models = new Map();
+
 @Injectable()
 export class AccentTesterService {
   constructor(@InjectModel('collections', 'accent') private CollectionsModel: Model<Collection>, @InjectConnection('accent') private connection: Connection) { }
@@ -23,7 +25,13 @@ export class AccentTesterService {
   }
 
   async getWords(collection: string): Promise<{ iv: string, content: string }> {
-    const model = await this.connection.model(collection, new Schema({ name: String }));
+    let model;
+    if (models.has(collection))
+      model = models.get(collection);
+    else {
+      model = await this.connection.model(collection, new Schema({ name: String }));
+      models.set(collection, model);
+    }
     const words = await model.find();
     return this.encrypt(JSON.stringify(words));
   }
