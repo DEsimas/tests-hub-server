@@ -25,6 +25,13 @@ export class AccentTesterService {
   }
 
   async getWords(collection: string): Promise<{ iv: string, content: string }> {
+    const collections = await this.CollectionsModel.find().exec();
+    collections.forEach(data => {
+      const c = JSON.parse(JSON.stringify(data));
+      if (c.alias == collection) {
+        collection = c.name;
+      }
+    });
     let model;
     if (models.has(collection))
       model = models.get(collection);
