@@ -28,7 +28,6 @@
         "watch": "nodemon ./src/main.ts"
     },
     "dependencies": {
-        "@nestjs/cli": "^9.1.2",
         "@nestjs/config": "^2.1.0",
         "@nestjs/core": "^9.4.0",
         "@nestjs/mongoose": "^9.1.1",
@@ -38,6 +37,7 @@
         "node-fetch-commonjs": "^3.1.1"
     },
     "devDependencies": {
+        "@nestjs/cli": "^9.1.2",
         "@types/express": "^4.17.13",
         "@types/node": "^18.0.0",
         "nodemon": "^2.0.19",
