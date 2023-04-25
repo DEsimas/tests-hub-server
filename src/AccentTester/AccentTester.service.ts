@@ -24,7 +24,7 @@ export class AccentTesterService {
     };
   }
 
-  async getWords(collection: string): Promise<{ iv: string, content: string }> {
+  async getWords(collection: string): Promise<{ word: string }[]> {
     const collections = await this.CollectionsModel.find().exec();
     collections.forEach(data => {
       const c = JSON.parse(JSON.stringify(data));
@@ -40,7 +40,7 @@ export class AccentTesterService {
       models.set(collection, model);
     }
     const words = await model.find();
-    return this.encrypt(JSON.stringify(words));
+    return words;
   }
 
   async getCollections(): Promise<string[]> {
